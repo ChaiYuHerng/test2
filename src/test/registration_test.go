@@ -45,11 +45,11 @@ var udpInterval time.Duration = 100 * time.Nanosecond
 var udpPacketCount int =        15000
 var totalUdpPacket int = 120000000000
 
-const ranIpAddr string = "192.168.2.53"
+const ranIpAddr string = "192.168.2.35"
 const amfIpAddr string = "192.168.2.102" // no need to change
 const upfIpAddr string = "192.168.2.111" // 110, 111
-const dNServer  string = "192.168.2.194" // 205, 206
-var dNServerI = [4]byte{192, 168, 2, 194} // 205, 206
+const dNServer  string = "192.168.2.26" // 205, 206
+var dNServerI = [4]byte{192, 168, 2, 26} // 205, 206
 
 func BuildGTPHeader(teid uint32, seq uint16) ([]byte, error) {
     var ml uint16 = 52
